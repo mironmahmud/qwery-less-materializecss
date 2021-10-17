@@ -1,0 +1,142 @@
+
+
+@import url('../1-helpers/_variables.less');
+@import url('../1-helpers/_mixins.less');
+
+.footer__button {
+    .flex__center__end();
+
+    h4 {
+        font-weight: 400;
+        margin-right: 50px;
+    }
+}
+
+.footer__content {
+    h3 {
+        margin-bottom: 45px;
+    }
+
+    ul {
+        .flex__center__start();
+
+        li {
+            margin-right: 80px;
+            
+            a {
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.204545px;
+                text-transform: capitalize;
+                color: @white;
+            }
+        }
+    }
+}
+
+.footer__widget {
+    h4 {
+        color: @primary;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        li {
+            margin-bottom: 10px;
+
+            a {
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.204545px;
+                text-transform: capitalize;
+                color: @white;
+            }
+        }
+    }
+}
+
+.footer__end {
+    margin-top: 100px;
+
+    ul {
+        .flex__center();
+        margin-bottom: 50px;
+
+        li {
+            margin: 0px 15px;
+
+            a {
+                font-size: 22px;
+                color: @white;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        padding-bottom: 30px;
+        opacity: 0.5;
+    }
+}
+
+@media @phone {
+    .footer__part {
+        .valign-wrapper {
+            flex-direction: column;
+        }
+    }
+
+    .footer__logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer__button {
+        flex-direction: column;
+
+        h4 {
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .footer__content {
+        h3  {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        ul {
+            li {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .footer__widget {
+        margin-top: 30px;
+    }
+
+    .footer__end {
+        margin-top: 50px;
+    }
+}
+
+@media @tablet {
+    .footer__button {
+        h4 {
+            margin-right: 25px;
+        }
+    }
+
+    .footer__widget {
+        margin-top: 50px;
+    }
+}
+
+@media @desktop {
+    .footer__widget {
+        margin-top: 50px;
+    }
+}
